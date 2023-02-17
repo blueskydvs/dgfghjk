@@ -7,8 +7,8 @@ RUN apt-get update && apt-get install -y supervisor wget unzip
 
 # 定义 UUID 及 伪装路径,请自行修改.(注意:伪装路径以 / 符号开始,为避免不必要的麻烦,请不要使用特殊符号.)
 ENV UUID 8e7b306a-1810-4b2e-923b-d33d83c21668
-ENV VMESS_WSPATH /8e7b306a-1810-4b2e-923b-d33d83c21668-vmess
-ENV VLESS_WSPATH /8e7b306a-1810-4b2e-923b-d33d83c21668-vless
+ENV VMESS_WSPATH /3acf9bfc-0056-4588-b37c-617906b52dae-vmess
+ENV VLESS_WSPATH /3acf9bfc-0056-4588-b37c-617906b52dae-vless
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY nginx.conf /etc/nginx/nginx.conf
